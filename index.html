@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود و ثبت‌نام</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-box active" id="login-box">
+                <h2>ورود</h2>
+                <form>
+                    <div class="input-box">
+                        <label>نام کاربری</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <label>کلمه عبور</label>
+                        <input type="password" required>
+                    </div>
+                    <button type="submit">ورود</button>
+                    <p>حساب کاربری ندارید؟ <a href="#" onclick="toggleForm()">ثبت‌نام</a></p>
+                </form>
+            </div>
+            <div class="form-box" id="signup-box">
+                <h2>ثبت‌نام</h2>
+                <form>
+                    <div class="input-box">
+                        <label>ایمیل</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="input-box">
+                        <label>نام کاربری</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-box">
+                        <label>کلمه عبور</label>
+                        <input type="password" required>
+                    </div>
+                    <button type="submit">ثبت‌نام</button>
+                    <p>حساب کاربری دارید؟ <a href="#" onclick="toggleForm()">ورود</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleForm() {
+            const loginBox = document.getElementById('login-box');
+            const signupBox = document.getElementById('signup-box');
+
+            loginBox.classList.toggle('active');
+            signupBox.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl; /* Set the text direction to right-to-left */
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    direction: rtl; /* Set the text direction to right-to-left for the form container */
+}
+
+.form-box {
+    width: 100%;
+    padding: 20px;
+    display: none;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+}
+
+    .form-box.active {
+        display: block;
+    }
+
+    .form-box h2 {
+        margin-bottom: 20px;
+        text-align: right; /* Align heading text to the right */
+    }
+
+.input-box {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+    .input-box label {
+        display: block; /* Make label a block element */
+        margin-bottom: 5px; /* Add space between label and input */
+        text-align: right; /* Align label text to the right */
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        outline: none;
+    }
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #e4c590;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #d5b382;
+    }
+
+p {
+    margin-top: 20px;
+    text-align: center; /* Center align paragraph text */
+}
+
+a {
+    color: #e4c590;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
