@@ -1,0 +1,30 @@
+.user_pic
+{
+    border-radius:100%;
+}
+
+.user_info
+{
+    display: inline-block;
+}
+
+user_name 
+{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.users 
+{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.name {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
